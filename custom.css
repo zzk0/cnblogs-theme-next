@@ -85,6 +85,7 @@ a {
 	font-weight:400;
 	margin:0;
 	line-height:1.5;
+	width: 120px;
 }
 .menu {
 	margin-top:20px;
@@ -172,7 +173,7 @@ a {
 	margin-right:8px;
 }
 #sideBar {
-	margin-top:240px;
+	margin-top:280px;
 	position:static;
 	width:240px;
 	background:#fff;
@@ -569,12 +570,15 @@ div.commentform textarea, #tbCommentBodyPreview {
 	font-size: 18.667px;
 	color: var(--heading-color);
 	line-height: 2;
+	font-family:'Noto Serif SC','Times New Roman',"PingFang SC","Microsoft YaHei",sans-serif;
 }
+
 #myposts .postDesc2 {
 	font-size: 14px;
 	color: var(--text-color-secondary);
 	text-align: right;
 }
+
 /* Responsive design*/
 @media (min-width:1600px) {
 	#main,.header {
@@ -670,5 +674,9 @@ li {
 
 /* 代码文本默认黑色, 会和背景冲突, 改成白色 */
 .cnblogs-markdown .hljs, .cnblogs-post-body .hljs {
+	color: #fff;
+}
+
+.cnblogs-markdown code {
 	color: #fff;
 }

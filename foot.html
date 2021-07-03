@@ -10,8 +10,6 @@
   }
 </script>
 
-<!-- 下方内容请勿擅自修改，除非知道明确含义，如进行完善和扩展，请fork源码(https://github.com/MakerGYT/cnblogs-theme-next)后提交pull request;-->
-
 <!-- 引入在线字体-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Serif SC:wght@400;500;700&display=swap&subset=latin,latin-ext">
 <!-- 引入图标库-->
@@ -71,11 +69,6 @@
         $('#EntryTag').remove()
       }
     })
-  }
-
-  // 设置参考文献标题
-  function setFoot() {
-    $('.footnotes').prepend('<h2 id="-参考文献" class="footnotes-meta">参 考 文 献</h2>')
   }
 
   // 设置左侧目录
@@ -165,6 +158,18 @@
     $('.site-title').text(config.siteTitle)
     $('.menu-item-home a:first').attr('href', '/' + blogSlug)
     $('.menu-item-archives a:first').attr('href', '/' + blogSlug+'/p')
+    $('.menu-item-tags a:first').attr('href', '/' + blogSlug+'/tag')
+
+    if(/(\/p)$/.test(url)) {
+      $('.menu-item-home').removeClass('menu-item-active')
+      $('.menu-item-archives').addClass('menu-item-active')
+      $('.menu-item-tags').removeClass('menu-item-active')
+    }
+    else if(/(\/tag)$/.test(url)) {
+      $('.menu-item-home').removeClass('menu-item-active')
+      $('.menu-item-archives').removeClass('menu-item-active')
+      $('.menu-item-tags').addClass('menu-item-active')
+    }
   }
 
   // 设置右上角github跳转链接
