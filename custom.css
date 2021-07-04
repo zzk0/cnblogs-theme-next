@@ -380,10 +380,12 @@ a {
 	background-color:var(--code-bg-color) !important;
 	border:none !important;
 	font-weight: 300;
+	font-family: "Consolas", "Courier New", "monospace" !important;
 }
 .cnblogs-markdown .hljs {
 	font-size:14px !important;
 	padding:10px !important;
+	font-family: "Consolas", "Courier New", "monospace" !important;
 }
 #cnblogs_post_body img {
 	display:block;
