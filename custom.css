@@ -98,14 +98,14 @@ a {
 }
 .search-wrap {
 	display:inline-block;
-	background-color:var(--code-bg-color);
+	background-color:#ffffff;
 	border-radius:20px;
 	padding:0 10px;
 }
 .input_my_zzk {
 	width:140px;
 	vertical-align:middle;
-	background-color:var(--code-bg-color);
+	background-color:#ffffff;
 	height:30px;
 	border:none;
 	outline:none 
@@ -173,7 +173,7 @@ a {
 	margin-right:8px;
 }
 #sideBar {
-	margin-top:280px;
+	margin-top:320px;
 	position:static;
 	width:240px;
 	background:#fff;
