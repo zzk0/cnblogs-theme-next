@@ -20,8 +20,8 @@
 	--text-color-grey:rgba(0, 0, 0, 0.25);
 	/*链接色*/
 	--link-color: #555;
-	/*代码块背景色*/
-	--code-bg-color: #2d2b57;
+	/* 小的代码块 背景色*/
+	--code-bg-color: #ffffff;
 }
 
 .header {
@@ -672,13 +672,4 @@ li {
 #stats-total-view-count::after {
 	content: "\A";
 	white-space: pre;
-}
-
-/* 代码文本默认黑色, 会和背景冲突, 改成白色 */
-.cnblogs-markdown .hljs, .cnblogs-post-body .hljs {
-	color: #fff;
-}
-
-.cnblogs-markdown code {
-	color: #fff;
 }
