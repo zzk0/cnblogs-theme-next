@@ -75,3 +75,26 @@
 - 显示代码行和复制
 - 修复可能存在的时序问题
 - 修复订阅(非导航区id="blog_nav_rss"无法绑定事件)
+
+
+# 参考页面
+
+html 压缩：https://htmlcompressor.com/compressor/
+
+css 压缩：https://csscompressor.com/
+
+# CHANGELOG
+
+记录 FORK 项目之后的改变。
+
+## TODO
+
+- 标题下面补充更多信息
+- 自动引用文献
+- 目前 js 中使用 setTimeout 来等待页面加载完毕，可以考虑使用回调
+
+## 2022/12/17
+
+- 调整标题和章节名称大小
+- 给章节标题自动加序号
+

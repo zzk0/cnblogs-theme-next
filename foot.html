@@ -15,9 +15,9 @@
 <!-- 引入图标库-->
 <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- 更改高亮样式-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/styles/gradient-dark.min.css">
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/styles/gradient-dark.min.css"> -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script> -->
+<!-- <script>hljs.highlightAll();</script> -->
 <!-- 顶部滚动条-->
 <script src="https://cdn.jsdelivr.net/gh/djyde/ToProgress/ToProgress.min.js"></script>
 
@@ -100,6 +100,17 @@
         // $("#" + index + "li ol").append("<li><a href='#_caption" + index2 + "' style='color:#5f5f5f;'>" + self.innerHTML + "</a></li>");
         return;
       }
+    });
+  }
+
+  // 自动设置每个标题的序号
+  function setTitleOrder() {
+    var chapter = ["一、", "二、", "三、", "四、", "五、", "六、", "七、", "八、", "九、", "十、", 
+                   "十一、", "十二、", "十三、", "十四、", "十五、", "十六、", "十七、", "十八、", "十九、"];
+    var i = 0;
+    $("#cnblogs_post_body h1").each(function(index, domEle) {
+      $(domEle).text(chapter[i] + $(domEle).text());
+      i += 1;
     });
   }
 
@@ -256,9 +267,15 @@
       setPreNext();
       onScroll();
     }, 500);
+
     setTimeout( () => {
       setCommentStyle()
-    }, 1000)
+    }, 1000);
+    
+    setTimeout( () => {
+      setTitleOrder()
+    }, 1000);
+
   }
 
   /*
