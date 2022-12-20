@@ -309,8 +309,8 @@
      font-family:'Noto Serif SC','Times New Roman',"PingFang SC","Microsoft YaHei",sans-serif;
 }
  #cnblogs_post_body p {
-     margin-bottom: 0;
-     margin-top: 0;
+     /* margin-bottom: 0;
+     margin-top: 0; */
      font-family:'Noto Serif SC','Times New Roman',"PingFang SC","Microsoft YaHei",sans-serif;
 }
  #cnblogs_post_body h2, #cnblogs_post_body h3 {
@@ -689,7 +689,7 @@
 }
 #cnblogs_post_body h2 {
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     counter-increment: h2Counter;
     counter-reset: h3Counter;
 }
@@ -704,5 +704,12 @@
 #cnblogs_post_body h4 {
     font-weight: bold;
 }
+#cnblogs_post_body > .table-wrapper {
+    padding: 40px 0;
+}
+#cnblogs_post_body > .table-wrapper > table {
+    margin: auto;
+}
+
 /* reference: https://razonyang.com/zh-hans/notes/css/numberify-headings/ */
 /* https://gnss.help/2016/10/23/css-counter/ */
