@@ -688,6 +688,7 @@
     content: counter(h1Counter)'.'counter(h2Counter) ' '
 }
 #cnblogs_post_body h2 {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 25px;
     counter-increment: h2Counter;
@@ -697,6 +698,7 @@
     content: counter(h1Counter)'.'counter(h2Counter) '.' counter(h3Counter) ' '
 }
 #cnblogs_post_body h3 {
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
     counter-increment: h3Counter;
@@ -705,7 +707,7 @@
     font-weight: bold;
 }
 #cnblogs_post_body > .table-wrapper {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 #cnblogs_post_body > .table-wrapper > table {
     margin: auto;
